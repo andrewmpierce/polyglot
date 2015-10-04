@@ -4,42 +4,42 @@ def percentage_of_bracks(text):
     total_length = len(text)
     text = re.sub(r'[^[]]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_curlies(text):
     total_length = len(text)
     text = re.sub(r'[^{}]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def presence_of_at(text):
     total_length = len(text)
     text = re.sub(r'[^@]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_dollar(text):
     total_length = len(text)
     text = re.sub(r'[^$]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_semi(text):
     total_length = len(text)
     text = re.sub(r'[^;]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_hyphen(text):
     total_length = len(text)
     text = re.sub(r'[^-]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def presence_of_end(text):
@@ -130,29 +130,28 @@ def percentage_of_hash(text):
     total_length = len(text)
     text = re.sub(r'[^#]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_percent(text):
     total_length = len(text)
     text = re.sub(r'[^%]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_ast(text):
     total_length = len(text)
     text = re.sub(r'[^*]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
+    return len(text)
 
 
 def percentage_of_arrow(text):
     total_length = len(text)
     text = re.sub(r'[^<>]', '', text)
     punc_length = len(text)
-    return punc_length / total_length
-
+    return len(text)
 
 def presence_of_let(text):
     total_length = len(text)
