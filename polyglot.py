@@ -14,6 +14,13 @@ def percentage_of_curlies(text):
     return punc_length / total_length
 
 
+def presence_of_at(text):
+    total_length = len(text)
+    text = re.sub(r'[^@]', '', text)
+    punc_length = len(text)
+    return punc_length / total_length
+
+
 def percentage_of_dollar(text):
     total_length = len(text)
     text = re.sub(r'[^$]', '', text)
