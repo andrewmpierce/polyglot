@@ -160,7 +160,6 @@ def presence_of_let(text):
     return times*3/(total_length)
 
 
-
 def percentage_of_parens(text):
     total_length = len(text)
     text = re.sub(r'[^()]', '', text)

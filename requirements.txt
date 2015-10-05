@@ -1,0 +1,7 @@
+ipython[all]
+glob
+pandas
+numpy
+sklearn
+scipy
+textblob
